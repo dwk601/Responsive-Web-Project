@@ -1,34 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
 .container {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 fr grid template */
-  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr; /* 4 fr grid template */
+  grid-template-columns: 0.8fr 1fr 1fr 1fr; /* 4 fr grid template */
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.6fr; /* 4 fr grid template */
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+  grid-gap: 0.5em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 0.5fr 1fr; /* 2 fr grid template */
+    grid-template-rows: 0.2fr 1.5fr 1fr 1fr 1fr 0.5fr; /* 4 fr grid template */
+    grid-template-areas:
+      "nav nav"
+      "sidebar main"
+      "sidebar content1"
+      "sidebar content2"
+      "sidebar content3"
+      "footer footer";
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr; /* 1 fr grid template */
+    grid-template-rows: 0.2fr 1fr 1.5fr 1fr 1fr 0.5fr 0.5fr; /* 4 fr grid template */
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+  }
 }
 
 nav {
   background-color: bisque;
+  grid-area: nav;
 }
 
 main {
   background-color: burlywood;
+  grid-area: main;
 }
 
 #sidebar {
   background-color: cadetblue;
+  grid-area: sidebar;
 }
 
 #content1 {
   background-color: chartreuse;
+  grid-area: content1;
 }
 
 #content2 {
   background-color: chocolate;
+  grid-area: content2;
 }
 
 #content3 {
   background-color: coral;
+  grid-area: content3;
 }
 
 footer {
   background-color: cornflowerblue;
+  grid-area: footer;
 }
