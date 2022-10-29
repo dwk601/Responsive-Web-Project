@@ -7,14 +7,58 @@
   </head>
   <body>
     <div class="container">
-      <nav>Nav</nav>
+      <nav>
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#photo">Contents</a>
+          <a href="#contact">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
       </nav>
-      <main>Home</main>
-      <div id="sidebar">Sidebar</div>
-      <div id="content1">Content1</div>
-      <div id="content2">Content2</div>
-      <div id="content3">Content3</div>
-      <footer>Footer</footer>
+      </nav>
+      <main>
+        <!--Welcome to my website-->
+        <div class="welcome" id="home">
+          <h1>Welcome to my website</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatum, quod, quia, voluptas quae voluptatem quibusdam
+            consequuntur voluptates quos quas nesciunt. Quisquam, quae. Quisquam
+            voluptatum, quod, quia, voluptas quae voluptatem quibusdam
+            consequuntur voluptates quos quas nesciunt. Quisquam, quae.
+          </p>
+      </main> 
+      <!-- about me with flex layout -->
+      <section class="about-me" id="about">
+        <div class="about-me__content">
+          <h2>About Me</h2>
+          <div class="about-me__image">
+            <img src="https://picsum.photos/200/300" alt="about me" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatum, quae, quod, voluptas quibusdam voluptates quidem
+            voluptatibus quos quia quas nesciunt. Quisquam, quae. Quisquam
+            voluptatum, quae, quod, voluptas quibusdam voluptates quidem
+            voluptatibus quos quia quas nesciunt. Quisquam, quae.
+          </p>
+        </div>
+      </section class= "photo-flex">
+      <div id="photo">
+        <!-- sample image-->
+        <img src="https://picsum.photos/200/300" alt="sample image" />
+        <img src="https://picsum.photos/200/300" alt="sample image" />
+        <img src="https://picsum.photos/200/300" alt="sample image" />
+      </div>
+        <footer id="contact">
+          <!--credit, contact information-->
+          <p>© 2022 by Dongook Kim. All rights reserved.</p>
+          <!--my github and email link-->
+          <a href="https://github.com/dwk601" target="_blank">Github</a>
+          <a href="mailto:kdoim100@gmail.com" target="_blank">Email</a>
+        </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
