@@ -79,6 +79,13 @@ nav {
   grid-area: nav;
 }
 
+.logo {
+  position: relative;
+  float: left;
+  height: 50px;
+  width: auto;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
