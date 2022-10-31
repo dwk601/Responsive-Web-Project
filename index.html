@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -18,7 +19,7 @@
         </div>
       </nav>
       
-      <main>
+      <main class="show">
         <!--Welcome to my website-->
         <div class="welcome" id="home">
           <h1>Welcome to my website</h1>
@@ -30,7 +31,7 @@
 
  
       <!-- about me with flex layout -->
-      <section class="about-me" id="about">
+      <section class="about-me show" id="about">
         <div class="about-me__content">
           <h2>About Me</h2>
           <p>
@@ -43,7 +44,7 @@
         </div>
       </section>
       
-      <div id="photo">
+      <div id="photo" class="show">
         <img src="pork_belly.jpg" alt="pork belly" />
           <p class = "caption">Korean BBQ</p>
         <img src="fried_rice.jpg" alt="fried rice" />
@@ -63,6 +64,5 @@
           <a href="mailto:kdoim100@gmail.com" target="_blank">Email</a>
         </footer>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
