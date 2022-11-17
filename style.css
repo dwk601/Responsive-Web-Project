@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Prompt&display=swap");
 
 /* updated margin when webpage width is small */
+/* added theme-toggle */
+
 body {
   font-family: "Prompt", sans-serif, "Open Sans", sans-serif;
   font-weight: 500;
