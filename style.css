@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Prompt&display=swap");
 
+/* updated margin when webpage width is small */
 body {
   font-family: "Prompt", sans-serif, "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 1.2em;
   margin: 0;
   padding: 0;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.5s ease;
 }
 
 .container {
@@ -219,6 +223,28 @@ nav {
     display: block;
     width: 100%;
     text-align: left;
+  }
+}
+
+/* theme toggle button */
+.theme-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #f2f2f2;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* when max-width 768px, place the theme toggle button on the top center */
+@media (max-width: 768px) {
+  .theme-toggle {
+    right: 33%;
   }
 }
 
